@@ -1,1 +1,1 @@
-# Evaluating the Effectiveness of Heterogeneous Ensemble Models Versus Single Models in Bank Customer Churn Prediction
+# Evaluating the Effectiveness of Heterogeneous Ensemble Models Versus Homogeneous Models in Bank Customer Churn Prediction
