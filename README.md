@@ -33,3 +33,15 @@ A Random Forest classifier was trained on the training data and predictions were
 ### Heterogeneous Ensemble Model
 A Voting Classifier was created by combining Random Forest, Decision Tree, and SVC. The voting method was set to 'soft' to use the predicted probabilities for voting. The ensemble model was trained on the training data and predictions were made on the test data. Performance metrics were calculated and the confusion matrix and ROC curve were plotted.
 
+## Results
+The Random Forest model achieved an accuracy of 0.8645, precision of 0.7480, recall of 0.4682, F1 score of 0.5759, and ROC AUC of 0.8566. The Decision Tree model achieved an accuracy of 0.8540, precision of 0.7264, recall of 0.4545, F1 score of 0.5588, and ROC AUC of 0.8410. The SVC model achieved an accuracy of 0.8620, precision of 0.7411, recall of 0.4618, F1 score of 0.5745, and ROC AUC of 0.8542. The heterogeneous ensemble model achieved an accuracy of 0.8565, precision of 0.7103, recall of 0.4555, F1 score of 0.5550, and ROC AUC of 0.8419.
+## Conclusion
+The study compared the effectiveness of heterogeneous ensemble models versus homogeneous models in predicting bank customer churn. While the heterogeneous ensemble model did not significantly outperform the homogeneous models in terms of accuracy, precision, recall, and F1 score, the Random Forest model stood out with slightly better overall performance metrics. These findings indicate that while heterogeneous ensemble models can provide robust predictions, homogeneous models like Random Forest may still offer strong predictive power for bank customer churn. Future research could explore additional ensemble techniques and more complex models to further enhance prediction accuracy.
+
+
+
+
+
+
+
+
