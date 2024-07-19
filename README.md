@@ -19,3 +19,17 @@ Country (Geography): The country where the customer resides.
 - Is Active Member (IsActiveMember): Indicates whether the customer is an active member with the bank (1 if they are active, 0 if they are not).
 
 The target variable, also known as the dependent variable, is labeled "Exited" and is represented by a binary flag: 1 if the customer closed their account with the bank and 0 if the customer is retained. This dataset will be used to evaluate the effectiveness of heterogeneous ensemble models versus single models in predicting bank customer churn.
+
+## Methodology
+### Data Preprocessing
+The dataset was first loaded and unnecessary columns such as 'RowNumber', 'CustomerId', and 'Surname' were dropped to focus on relevant features. Categorical variables like 'Geography' and 'Gender' were converted into numerical values using one-hot encoding. Binary variables like 'HasCrCard' and 'IsActiveMember' were also converted to integers. The dataset was then split into training and testing sets with an 80-20 split. Features were scaled using StandardScaler to ensure that all features contribute equally to the model.
+
+### Model Training and Evaluation
+The models were trained and evaluated using several performance metrics including accuracy, precision, recall, F1 score, and ROC AUC. Confusion matrices and ROC curves were plotted for better visualization.
+
+### Homogeneous Models
+A Random Forest classifier was trained on the training data and predictions were made on the test data. Performance metrics were calculated and the confusion matrix and ROC curve were plotted. Similarly, a Decision Tree classifier and a Support Vector Classifier (SVC) were trained and evaluated using the same process.
+
+### Heterogeneous Ensemble Model
+A Voting Classifier was created by combining Random Forest, Decision Tree, and SVC. The voting method was set to 'soft' to use the predicted probabilities for voting. The ensemble model was trained on the training data and predictions were made on the test data. Performance metrics were calculated and the confusion matrix and ROC curve were plotted.
+
