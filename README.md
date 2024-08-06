@@ -8,7 +8,6 @@ This project will compare the performance of heterogeneous ensemble models with 
 The dataset used in this project is sourced from [Kaggle](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers?datasetId=797699&sortBy=voteCount) and comprises 10,000 rows and 14 columns. The dataset's primary objective is to predict whether a customer will churn (leave the bank) based on their demographics and financial information.
 
 The dataset contains several independent variables, which are potential factors that may influence a customer's decision to leave the bank. These variables include customer-specific information such as:
-
 - Credit Score: A numerical representation of the customer's creditworthiness.
 Country (Geography): The country where the customer resides.
 - Age: The age of the customer.
